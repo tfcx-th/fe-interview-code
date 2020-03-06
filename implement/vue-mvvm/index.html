@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message">
+        <ul>
+            <li></li>
+        </ul>
+        <input type="text" v-model="list.item">
+        {{ list.item }}
+    </div>
+    <script type="module">
+        import Mymvvm from './mvvm.mjs'
+
+        let vm = new Mymvvm({
+            el: '#app',
+            data:{
+                message: 'Hello World',
+                list: {
+                    item: 'I love you'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
