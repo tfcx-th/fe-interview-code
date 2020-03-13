@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.square1 {
+    width: 10%;
+    height: 10vw;
+    background: red;
+}
+
+.square2 {
+    width: 10%;
+    /* height: 0; */
+    padding-top: 10%;
+    background: orange;
+}
+
+.square3 {
+    width: 10%;
+    overflow: hidden;
+    background: green;
+}
+
+.square3::after {
+    content: "";
+    display: block;
+    margin-top: 100%;
+}
+
+.square4 {
+       width: 20%;
+    /* height: 0; */
+    padding-top: 10%;
+    background: rebeccapurple;
+}

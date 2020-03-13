@@ -1,0 +1,33 @@
+* {
+    margin: 60px;
+}
+
+.line {
+    width: 600px;
+    background: black;
+}
+
+.line-1px {
+    height: 1px;
+}
+
+.line-1-half {
+    height: 0.5px;
+}
+
+.line-2-half {
+    height: 1px;
+    transform: scaleY(0.5);
+    /* transform-origin: 50% 100%; */
+}
+
+.line-3-half {
+    height: 1px;
+    background: linear-gradient(0deg, white, black);
+}
+
+.line-4-half {
+    height: 1px;
+    background: none;
+    box-shadow: 0 0.5px 0 black;
+}
