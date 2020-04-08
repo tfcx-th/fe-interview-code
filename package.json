@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "promisetest": "promises-aplus-tests implement/promise/promise",
-    "build:dev": "webpack --mode=development --config webpack/webpack.config.js"
+    "build:dev": "webpack --mode=development --config webpack/webpack.config.js",
+    "regenerator": "regenerator --include-runtime implement/generator/generator.js > implement/generator/generator-es5.js"
   },
   "author": "tfcx",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "jest": "^25.1.0",
     "node-sass": "^4.13.1",
     "promises-aplus-tests": "^2.1.2",
+    "regenerator": "^0.14.4",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   },
